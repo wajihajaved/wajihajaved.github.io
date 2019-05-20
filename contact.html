@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<style type="text/css">
+
+html{
+
+   scroll-behavior: smooth;
+}
+
+
+body, html {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.bodyh {
+
+  height: 680px;
+  margin: 0;
+  background-attachment: absolute;
+   background-size: cover;
+   background-repeat: no-repeat;
+     background-color: white
+     padding-top: 10px;
+}
+
+.forms{
+  top: 50%;
+  margin-left: 50%;
+  position: relative; 
+  transform: translate(-55%, -50%);
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.form-control {
+
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid gray;
+  margin bottom: 16px;
+}
+
+@media only screen and (max-width: 600px){
+
+  h3 {
+      font-size: 1.1em;
+    }
+
+   .fa {
+     font-size: 14px;
+   }
+  }
+
+
+a {
+
+  color: white;
+  font-size: 13px;
+}
+
+a:hover {
+
+  color: red;
+}
+
+p {
+
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+
+}
+
+.fa {
+
+
+  font-size: 20px;
+}
+
+.fa:hover {
+
+  opacity: 0.7;
+  transition: all 0.3s linear;
+   text-decoration: none;
+   color: white; 
+}
+
+.fa-facebook {
+
+  padding: 20px;
+  padding-top: 20px;
+  margin: 5px 2px;
+  text-align: center;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  padding: 20px;
+  margin: 5px 2px;
+  text-align: center;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+
+  padding: 20px;
+  margin: 5px 2px;
+  text-align: center;
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  padding: 20px;
+  margin: 5px 2px;
+  text-align: center;
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-google {
+  padding: 20px;
+  margin: 5px 2px;
+  text-align: center;
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+</style>
+
+
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#" style="text-decoration: none; color: white;">TJ'S Production &nbsp; &nbsp;</a> 
+  <a href="welcome.html" ><strong>Home</strong></a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div class="bodyh">
+
+
+    <div class="forms">
+
+    <h3 style="padding-top: 50px; padding-bottom: 20px; text-shadow: 1px 1px gray; font-weight: bold;">Send us a message and we'll respond as soon as possible</h3>
+
+      <form action="form.php" method="post">
+
+          <div class="form-group">
+        <label for="name"><i>Name</i></label>
+        <input type="text" class="form-control" id="name" placeholder="Please enter your name" name="name" style="height: 40px;" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="email"><i>Email</i></label>
+        <input type="email" class="form-control" id="email" placeholder="Please enter your email" name="email" style="height: 40px;" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="message"><i>Message</i></label>
+        <textarea type="message" class="form-control" id="msg" placeholder="Write what you want" name="msg" style="height: 100px; resize: none;" required/></textarea>
+      </div>
+
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>  
+      </div>
+<button type="submit" class="form.form-control" style="background-color: orange; color: white; font-weight: bold; margin-top: 20px; width: 200px;
+height: 40px;">Send Message</button>
+
+    </form>
+    </div>
+
+</div>
+
+
+<footer class="page-footer font-small indigo" style="background-color: #191970;">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-3 mb-3" style="padding-top:30px; padding-bottom: 20px;">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+         <span class="glyphicon glyphicon-home" style="font-size: 25px; color: white;"></span><br><a href="#!">DHA Phase #2, near MD Market, Karachi</a>
+      </div>
+
+      <div class="col-md-2 mb-3">
+          <span class="glyphicon glyphicon-phone" style="font-size: 25px; color: white;"></span><br><a href="#!" ">0331-2345676</a>
+      </div>
+
+      <div class="col-md-2 mb-3">
+         <span class="glyphicon glyphicon-envelope" style="font-size: 25px; color: white;"></span><br><a href="#!">wajiha1234javed@gmail.com</a>
+      </div>
+
+      <div class="col-md-2 mb-3">
+          <span <span class="glyphicon glyphicon-picture" style="font-size: 25px; color: white;"></span><br><a href="portfolio.html">Portfolio</a>
+      </div>
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+      <!-- Grid column -->
+      <div class="col-md-8 col-12 mt-5">
+        <p style="line-height: 1.9rem; font-size: 15px; padding-top: 10px; color: white; padding-top: 30px; text-align: center;">
+          
+          At TJ'S Production we believe that photography is a method of telling stories. It's about capturing moments and acquiring elegance in unlikely places at it's best when emphasize by truth.
+        </p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 4% 15% 8%;">
+
+    <!-- Grid row-->
+    <div class="row pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="mb-5 flex-center">
+          <ul class="list-unstyled list-inline text-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <a href="#" class="fa fa-facebook"><br></a>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <a href="#" class="fa fa-twitter"></a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+         <a href="#" class="fa fa-google"></a>
+          <!--instagram -->
+         <a href="#" class="fa fa-instagram"></a>
+             <!--snapchat-->
+         <a href="#" class="fa fa-snapchat-ghost"></a>
+          </ul>
+        </div>
+
+      </div>
+   
+
+    </div>
+
+
+  </div>
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2018-19 Copyright:&nbsp;
+    <a href="#" style="text-decoration:none; color: white; font-size: 13px;"> TJ's Productio. All Rights reserved.</a>
+  </div>
+
+
+</footer>
+
+
+
+
+</body>
+</html>
